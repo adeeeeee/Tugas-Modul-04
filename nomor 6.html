@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS. Nomor 6</title>
+    </head>
+
+    <body>
+        <h1>Nomor 6</h1>
+    </body>
+
+    <script>
+    function printFullAge(yearOfBirth) {
+	var ages = [];
+	var fullAges = [];
+
+	for (var i 	= 0; i < yearOfBirth.length; i++) {
+	ages[i] = 2017 - yearOfBirth[i];
+}
+
+
+	for (i = 0; i < ages.length; i++) {
+	if (ages[i] >= 18) {
+		console.log('Orang ' + (i + 1) + ' berumur ' + ages[i] + ' dan sudah cukup umur.');
+		fullAges.push(true);
+	} else {
+		console.log('Orang ' + (i + 1) + ' berumur ' + ages[i] + ' dan belum cukup umur.');
+		fullAges.push(false);
+	}
+}
+	return fullAges;
+}
+
+var yearOfBirth = [1945, 1997, 1998, 1854, 2018];
+var full_1 = printFullAge(yearOfBirth);
+var full_2 = printFullAge([1971, 1999, 1989, 1978, 2005]);
+</script>
+
+</html>
